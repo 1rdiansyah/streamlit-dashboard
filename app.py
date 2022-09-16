@@ -32,7 +32,16 @@ outputs = data[(data['trending_date'] >= start_date) &
                (data['trending_date'] <= end_date)]
 if category != "All Categories": 
     outputs = outputs[outputs['category'] == category]
+    
+# title
+st.title("Indonesia's YouTube Trending Statistics")
 
+# metrics
+col1, col2 = st.columns(2)
+col1.metric(label='Total Unique Videos',
+            value=data['title'].nunique())
+col2.metric(label='Total Unique Channels',
+            value=data['channel_name'].nunique())
 # Visualisasi bar chart
 st.header(':video_camera: Channel')
 bar_data = outputs['channel_name'].value_counts().nlargest(10)
