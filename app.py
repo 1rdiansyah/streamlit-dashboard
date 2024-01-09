@@ -4,6 +4,7 @@ import pandas as pd
 import pickle
 from PIL import Image
 import streamlit as st
+from streamlit.scriptrunner.script_run_context import get_script_run_ctx as get_report_ctx
 import plotly.express as px
 
 px.defaults.template = 'plotly_dark'
