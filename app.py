@@ -1,7 +1,6 @@
 from secrets import choice
 from ssl import Options
 import pandas as pd
-from streamlit.scriptrunner.script_run_context
 import pickle
 from PIL import Image
 import streamlit as st
