@@ -12,7 +12,7 @@ px.defaults.color_continuous_scale = 'reds'
 img = Image.open('assets/youtube.png')
 st.sidebar.image(img)
 
-# Membuka file pickel
+# Membuka file pickle
 with open("data/used_data.pickle", 'rb') as f:
     data = pickle.load(f)
 
