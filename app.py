@@ -14,7 +14,7 @@ st.sidebar.image(img)
 
 # Membuka file pickle
 with open("data/used_data.pickle", 'rb') as f:
-    data = pickle.load(f)
+    data = pickle.loads(f)
 
 min_date = data['trending_date'].min()
 max_date = data['trending_date'].max()
