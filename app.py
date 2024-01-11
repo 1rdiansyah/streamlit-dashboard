@@ -13,7 +13,7 @@ img = Image.open('assets/youtube.png')
 st.sidebar.image(img)
 
 # Membuka file pickle
-with open("./data/used_data.pickle", 'rb') as f:
+with open("data/used_data.pickle", 'rb') as f:
     data = pickle.load(f)
 
 min_date = data['trending_date'].min()
